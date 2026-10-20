@@ -1,0 +1,17 @@
+L L_pos ""
+l l_pos ""
+epsilon l/L ""
+K_star K_star_pos ""
+eta eta_pos ""
+cf_l_pos comp1.intop2(1+d(comp1.chil3,z))
+cf_s_pos comp1.intop1(1+d(comp1.chis3,z))
+Kl_eff Kl*cf_l_pos ""
+Dl_eff Dl*cf_l_pos ""
+Ks_eff Ks_pos*cf_s_pos ""
+Ds_eff Ds_neg*cf_s_pos ""
+Eq ps-pl-Eq_pos(cs/cs_max_pos) ""
+kj kj_pos ""
+i_BV "kj*2*sqrt(cs*cl)*sqrt(1 - cs/cs_max_pos)*sinh(F*Eq/(2*R*T))" ""
+cs_init cs_max_pos*0.99 ""
+ps_init Eq_pos(0.99)-Eq_neg(0.05) ""
+pl_init 0 ""

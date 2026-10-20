@@ -1,0 +1,17 @@
+L L_neg ""
+l l_neg ""
+epsilon l/L ""
+K_star K_star_neg ""
+eta eta_neg ""
+cf_l_neg comp1.intop2(1+d(comp1.chil3,z))
+cf_s_neg comp1.intop1(1+d(comp1.chis3,z))
+Kl_eff Kl*cf_l_neg ""
+Dl_eff Dl*cf_l_neg ""
+Ks_eff Ks_neg*cf_s_neg ""
+Ds_eff Ds_neg*cf_s_neg ""
+Eq ps-pl-Eq_neg(cs/cs_max_neg) ""
+kj kj_neg ""
+i_BV "if(cs<cs_max_neg, kj*2*sqrt(abs(cs*cl))*sqrt(abs(1 - cs/cs_max_neg))*sinh(F*Eq/(2*R*T)), 0)" ""
+cs_init 0.05*cs_max_neg 0.95*cs_max_neg
+ps_init 0 ""
+pl_init 0 ""
