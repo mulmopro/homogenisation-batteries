@@ -11,7 +11,7 @@ The model contains two components:
 | `comp1` — 3D | Periodic closure problems in the solid and liquid phases of an imported cell geometry | (`chis1`, `chis2`, `chis3`), (`chil1`, `chil2`, `chil3`) |
 | `comp2` — 1D | Mass and charge transport across the negative electrode, separator, and positive electrode | `cs`, `cl`, `ps`, `pl` |
 
-The closure problems impose periodic conditions on opposite cell faces and integral zero-mean constraints on each corrector. Their fluxes have the form `e_j + grad(chi_j)`. The longitudinal `zz` closure integrals are used in the 1D transport coefficients; the microscopic `z` direction is mapped to the macroscopic `x` direction.
+The closure problems impose periodic conditions on opposite cell faces and integral zero-mean constraints on each corrector. Their fluxes have the form `e_j + grad(chi_j)`. The longitudinal `zz` closure integrals are used in the 1D transport coefficients.
 
 Both electrodes use the same closure solution. Different electrode morphologies require separate closure calculations or independently supplied effective coefficients.
 
