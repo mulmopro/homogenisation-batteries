@@ -98,13 +98,7 @@ Preserve the two-column layout and existing whitespace-separated format. Keep th
 
 Place `BatteryHomog.java`, `geometry.mphbin`, and all seven `.txt` files in the same project directory.
 
-The Java source obtains the input directory from the process working directory:
-
-```java
-private static final String MODEL_PATH =
-    System.getProperty("user.dir");
-```
-
+The Java source obtains the input directory from the process working directory.
 The working directory is the directory used by the running process, which can differ from the directory containing the Java or class file. Start COMSOL from the project directory using the commands below. All eight input files must be accessible in the working directory used by COMSOL.
 
 ## Windows commands — Windows 11 25H2
@@ -123,7 +117,7 @@ Set-Location "C:\COMSOL_models\Battery"
 & "C:\Program Files\COMSOL\COMSOL64\Multiphysics\bin\win64\comsolcompile.exe" BatteryHomog.java
 ```
 
-Compilation produces `BatteryHomog.class`. The `&` operator invokes the executable whose path is enclosed in quotation marks.
+Compilation produces `BatteryHomog.class`.
 
 ### 3. Launch COMSOL
 
